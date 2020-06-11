@@ -16,6 +16,7 @@ So, these dependencies should work on an Ubuntu-like system.
 1. Copy `new_mona` to `/usr/local/`.
 1. Copy `reduce` to `/usr/local/etc/`.
 1. Symlink to `/usr/local/new_mona/bin/mona` with the name `mona_inter`, such that `mona_inter` is in some directory listed in the `$PATH` environment variable.
+1. Add `/usr/local/etc/reduce/bin` to your `$PATH`, such that `redcsl` is in some directory listed in the `$PATH` environment variable. Note that a symlink does not work in general, because `/usr/local/etc/reduce/bin/redcsl` is a script that runs commands relative to the script location.
 
 ### System-specific settings
 If your system is different in certain ways than `loris`, then you may need to perform some extra steps. If you installed before performing some of these extra steps, you should reinstall. Alternatively, you can perform some of these extra steps in such a way that reinstallation is not needed.
