@@ -63,6 +63,7 @@ Name|Type|Location on `loris`
 `fixcalc`|binary|`/usr/local/bin/fixcalc`
 `minisat`|binary|`/usr/bin/minisat`
 `z3-4.3.2`|binary|`/usr/local/bin/z3-4.3.2`
+`z3`|symlink|
 `mona_predicates.mona`|mona|`/usr/local/lib/mona_predicates.mona`
 `new_mona`|package|`/usr/local/new_mona`
 `reduce`|package|`/usr/local/etc/reduce`
