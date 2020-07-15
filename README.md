@@ -13,9 +13,9 @@ So, these dependencies should work on an Ubuntu-like system.
 1. Either:
    1. Copy `mona_predicates.mona` to `/usr/local/lib/`, or
    1. Copy `mona_predicates.mona` to the same directory where you would invoke the `mona` prover. For example, if you were to run `./hip -tp mona testcases/ex5.c` at the root directory of the [hipsleek] repository, then copy `mona_predicates.mona` to the root directory of the [hipsleek] repository.
-1. Copy `new_mona` to `/usr/local/`.
+1. Copy `mona_1.4-18` to `/usr/local/`.
 1. Copy `reduce` to `/usr/local/etc/`.
-1. Symlink to `/usr/local/new_mona/bin/mona` with the name `mona_inter`, such that `mona_inter` is in some directory listed in the `$PATH` environment variable.
+1. Symlink to `/usr/local/mona_1.4-18/bin/mona` with the name `mona`, such that `mona` is in some directory listed in the `$PATH` environment variable.
 1. Add `/usr/local/etc/reduce/bin` to your `$PATH`, such that `redcsl` is in some directory listed in the `$PATH` environment variable. Note that a symlink does not work in general, because `/usr/local/etc/reduce/bin/redcsl` is a script that runs commands relative to the script location.
 
 ### System-specific settings
@@ -65,7 +65,7 @@ Name|Type|Location on `loris`
 `z3-4.3.2`|binary|`/usr/local/bin/z3-4.3.2`
 `z3`|symlink|
 `mona_predicates.mona`|mona|`/usr/local/lib/mona_predicates.mona`
-`new_mona`|package|`/usr/local/new_mona`
+`mona_1.4-18`|package|`/usr/local/mona_1.4-18`
 `reduce`|package|`/usr/local/etc/reduce`
 
 [hipsleek]: https://github.com/hipsleek/hipsleek
